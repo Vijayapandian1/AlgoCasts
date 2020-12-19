@@ -53,6 +53,7 @@ describe('GetFirst', () => {
 describe('GetLast', () => {
   test('returns the last element', () => {
     const l = new List();
+    expect(l.getLast()).toEqual(null);
     l.insertFirst(2);
     expect(l.getLast()).toEqual({ data: 2, next: null });
     l.insertFirst(1);
@@ -77,6 +78,8 @@ describe('Clear', () => {
 describe('RemoveFirst', () => {
   test('removes the first node when the list has a size of one', () => {
     const l = new List();
+    l.removeFirst();
+    expect(l.getFirst()).toEqual(null);
     l.insertFirst('a');
     l.removeFirst();
     expect(l.size()).toEqual(0);
