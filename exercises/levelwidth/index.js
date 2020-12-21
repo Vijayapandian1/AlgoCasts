@@ -28,7 +28,6 @@ function levelWidth(root) {
         }
     }
     return counters;
-    //Test
 }
 
 module.exports = levelWidth;
