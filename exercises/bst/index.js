@@ -56,7 +56,7 @@ class Node {
             this.right = new Node(data);
         }
     }
-    /* My Slution
+    /* My Slution 1
     contains(data){
     		let arr = [this];
         while(arr.length>0){
