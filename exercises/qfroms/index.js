@@ -22,9 +22,6 @@ class Queue {
 
     add(record){
         return this.s1.push(record);
-        // while(this.s1.peek()){
-        //     this.s2.push(this.s1.pop());
-        // }
     }
 
     remove(){
